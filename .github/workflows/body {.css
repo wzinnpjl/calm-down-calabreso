@@ -1,0 +1,60 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh; /* 100% da altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o container centralizado */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%; /* Para garantir que o conteúdo não ocupe toda a tela */
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Imagem do Calabreso */
+#calabreso-image {
+    max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da tela */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover do botão */
+button:hover {
+    background-color: #ff4e40;
+}
+
+/* Texto de resposta */
+#responseText {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: green;
+}

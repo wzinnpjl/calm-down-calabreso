@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calma Calabreso</title>
+    <style>
+        /* Definindo o fundo preto para a página */
+        body {
+            background-color: black;
+            color: white; /* Para garantir que o texto seja visível */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilizando o container */
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilizando a imagem */
+        #calabreso-image {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Estilizando o botão */
+        #calmaButton {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        #calmaButton:hover {
+            background-color: #e04e29;
+        }
+
+        /* Estilizando o texto de resposta */
+        #responseText {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calma Calabreso!</h1>
+        <img src="calabreso.jpg" alt="Calabreso" id="calabreso-image">
+        <button id="calmaButton">Calma!</button>
+        <p id="responseText" style="display:none;">Calma, calma, Calabreso!</p>
+    </div>
+
+    <script>
+        // Script para mostrar a resposta ao clicar no botão
+        document.getElementById("calmaButton").addEventListener("click", function() {
+            var responseText = document.getElementById("responseText");
+            if (responseText.style.display === "none") {
+                responseText.style.display = "block";
+            } else {
+                responseText.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
